@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <skip-to-content href="#content" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import SkipToContent from './components/SkipToContent'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SkipToContent
   }
 }
 </script>
