@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <skip-to-content href="#content" />
+
+    
   </div>
 </template>
 
 <script>
 import SkipToContent from './components/SkipToContent'
+import List from './components/list/List'
+import ListItem from './components/list/ListItem'
 
 export default {
   name: 'App',
   components: {
-    SkipToContent
+    SkipToContent,
+    List,
+    ListItem
   }
 }
 </script>

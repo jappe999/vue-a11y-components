@@ -9,6 +9,7 @@ const factory = () => mount(SkipToContent, {
 })
 
 describe('SkipToContent.vue', () => {
+  // TODO: Remove describe, because it is unnecessary.
   describe('Unfocussed state', () => {
     const wrapper = factory()
     it('should be hidden', () => {
