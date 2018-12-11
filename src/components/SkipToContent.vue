@@ -1,6 +1,7 @@
 <template>
   <a
     @focus="focussed = true"
+    @blur="focussed = false"
     :href="href"
     class="skip-to-content"
     :class="focussed && 'skip-to-content--focussed'"
@@ -34,7 +35,6 @@ export default {
   height: 1px;
   width: 1px;
   text-align: center;
-  visibility: hidden;
 
   &:focus,
   &:active,
@@ -44,7 +44,6 @@ export default {
     left: 0;
     width: auto;
     height: auto;
-    visibility: visible;
   }
 }
 </style>
